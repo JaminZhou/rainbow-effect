@@ -138,7 +138,7 @@ class DiscoverGuideView: UIView {
         pagingScrollView.delegate = self
         insertSubview(pagingScrollView, belowSubview: enterButton)
 
-        addTextLabel(text: "发现每日新惊奇", index: 0)
+        addTextLabel(text: "足不出户也能玩，发现每日新惊奇", index: 0)
     }
     
     func addCardView() {
