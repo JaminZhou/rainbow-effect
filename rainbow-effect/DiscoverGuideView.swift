@@ -165,6 +165,7 @@ class DiscoverGuideView: UIView {
         let x = CGFloat(cardView.subviews.count)*width
         let imageView = UIImageView(frame: CGRect(x: x, y: 0, width: width, height: height))
         imageView.image = image
+        cardView.addSubview(imageView)
         cardView.contentSize = CGSize(width: x+width, height: height)
     }
     
