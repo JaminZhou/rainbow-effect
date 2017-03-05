@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pi7-OW-aDd" customClass="DiscoverGuideView" customModule="rainbow_effect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_back" translatesAutoresizingMaskIntoConstraints="NO" id="9WJ-3B-Rdz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9WJ-3B-Rdz" secondAttribute="height" multiplier="223:276" id="o7d-Q7-gf3"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nch-6t-9H7">
+                    <rect key="frame" x="62" y="45" width="250" height="25"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_wonder" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-1P-pCd">
+                            <rect key="frame" x="12" y="6" width="99" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lgr-1P-pCd" secondAttribute="height" multiplier="99:13" id="hJE-vp-fPv"/>
+                                <constraint firstAttribute="width" constant="99" id="iOF-Bb-I9J"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_name" translatesAutoresizingMaskIntoConstraints="NO" id="BcI-rK-u6D">
+                            <rect key="frame" x="140" y="6" width="90" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="BcI-rK-u6D" secondAttribute="height" multiplier="90:13" id="8xm-B0-u8S"/>
+                                <constraint firstAttribute="width" constant="90" id="cg3-j8-JJW"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNh-lk-Kgs">
+                            <rect key="frame" x="125" y="0.0" width="1" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19636008520000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="HeT-Xz-pil"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cNh-lk-Kgs" secondAttribute="bottom" id="1mq-yg-mng"/>
+                        <constraint firstItem="cNh-lk-Kgs" firstAttribute="leading" secondItem="lgr-1P-pCd" secondAttribute="trailing" constant="14" id="4A5-uX-Xre"/>
+                        <constraint firstItem="cNh-lk-Kgs" firstAttribute="top" secondItem="nch-6t-9H7" secondAttribute="top" id="ESx-OU-HmR"/>
+                        <constraint firstItem="lgr-1P-pCd" firstAttribute="centerY" secondItem="nch-6t-9H7" secondAttribute="centerY" id="KDf-WB-Zhy"/>
+                        <constraint firstAttribute="width" constant="250" id="OkX-2c-osd"/>
+                        <constraint firstItem="BcI-rK-u6D" firstAttribute="leading" secondItem="cNh-lk-Kgs" secondAttribute="trailing" constant="14" id="T3F-vR-5dk"/>
+                        <constraint firstAttribute="height" constant="25" id="bcM-PK-JxR"/>
+                        <constraint firstItem="cNh-lk-Kgs" firstAttribute="centerX" secondItem="nch-6t-9H7" secondAttribute="centerX" id="cWO-Jv-i4H"/>
+                        <constraint firstItem="BcI-rK-u6D" firstAttribute="centerY" secondItem="nch-6t-9H7" secondAttribute="centerY" id="qBc-md-eb6"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_phone" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-sG-Xqk">
+                    <rect key="frame" x="62" y="142" width="251" height="447"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="g9W-sG-Xqk" secondAttribute="height" multiplier="251:447" id="Fht-4j-mL2"/>
+                        <constraint firstAttribute="width" constant="251" id="xV2-Fa-MOR"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_back2" translatesAutoresizingMaskIntoConstraints="NO" id="IAd-KO-Th5">
+                    <rect key="frame" x="76" y="196" width="223" height="276"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="BFx-4d-jCT"/>
+                        <constraint firstAttribute="width" secondItem="IAd-KO-Th5" secondAttribute="height" multiplier="223:276" id="Zk3-40-jAX"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Llh-o6-5G9">
+                    <rect key="frame" x="76" y="196" width="223" height="370"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="WdM-O3-jJu"/>
+                        <constraint firstAttribute="width" secondItem="Llh-o6-5G9" secondAttribute="height" multiplier="223:370" id="eUZ-GV-CEJ"/>
+                    </constraints>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-al-XHZ">
+                    <rect key="frame" x="176" y="622" width="23" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.0" green="0.55294117649999996" blue="0.92941176469999998" alpha="0.2014382102" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.55294117649999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-HB-bKu">
+                    <rect key="frame" x="62" y="274" width="250" height="140"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_wonder_white" translatesAutoresizingMaskIntoConstraints="NO" id="jbh-eu-FNM">
+                            <rect key="frame" x="59" y="0.0" width="132" height="18"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_name_white" translatesAutoresizingMaskIntoConstraints="NO" id="8XW-Wx-IKH">
+                            <rect key="frame" x="30" y="60" width="190" height="18"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发 现 每 日 新 惊 奇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-ui-VQj">
+                            <rect key="frame" x="56.5" y="114" width="138.5" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jbh-eu-FNM" firstAttribute="centerX" secondItem="bS9-HB-bKu" secondAttribute="centerX" id="07X-Ol-wLS"/>
+                        <constraint firstItem="kvO-ui-VQj" firstAttribute="centerX" secondItem="bS9-HB-bKu" secondAttribute="centerX" id="SJf-V1-0JK"/>
+                        <constraint firstAttribute="width" constant="250" id="XIU-rp-Cu6"/>
+                        <constraint firstItem="kvO-ui-VQj" firstAttribute="top" secondItem="8XW-Wx-IKH" secondAttribute="bottom" constant="36" id="ZcW-hx-kT0"/>
+                        <constraint firstItem="8XW-Wx-IKH" firstAttribute="centerX" secondItem="bS9-HB-bKu" secondAttribute="centerX" id="bxq-NF-Hci"/>
+                        <constraint firstItem="8XW-Wx-IKH" firstAttribute="top" secondItem="jbh-eu-FNM" secondAttribute="bottom" constant="42" id="tal-GI-47F"/>
+                        <constraint firstAttribute="height" constant="140" id="vdW-nJ-Jbn"/>
+                        <constraint firstItem="jbh-eu-FNM" firstAttribute="top" secondItem="bS9-HB-bKu" secondAttribute="top" id="zBU-g0-j76"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFj-jD-QYu">
+                    <rect key="frame" x="155" y="612" width="66" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="进入发现">
+                        <color key="titleColor" red="0.0" green="0.55294117649999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="enterDiscover:" destination="pi7-OW-aDd" eventType="touchUpInside" id="670-g9-i8n"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_line" translatesAutoresizingMaskIntoConstraints="NO" id="dky-5E-paG">
+                    <rect key="frame" x="155" y="643" width="73" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="BdL-be-Nhh"/>
+                        <constraint firstAttribute="height" constant="7" id="j46-Xb-SPZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dky-5E-paG" firstAttribute="leading" secondItem="PFj-jD-QYu" secondAttribute="leading" id="0DP-Ds-0Qc"/>
+                <constraint firstItem="9WJ-3B-Rdz" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="5da-N0-JaG"/>
+                <constraint firstItem="PFj-jD-QYu" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="6Fe-Zx-hqp"/>
+                <constraint firstItem="IAd-KO-Th5" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" constant="196" id="RKN-kM-LQX"/>
+                <constraint firstItem="g9W-sG-Xqk" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" constant="142" id="Ti6-Aj-aIE"/>
+                <constraint firstItem="nch-6t-9H7" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="U6q-mZ-ddH"/>
+                <constraint firstItem="zyq-al-XHZ" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="VSq-RC-AXD"/>
+                <constraint firstItem="9WJ-3B-Rdz" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" id="ZH1-Fj-iPk"/>
+                <constraint firstItem="dky-5E-paG" firstAttribute="top" secondItem="PFj-jD-QYu" secondAttribute="bottom" constant="-1" id="dPM-i6-W5D"/>
+                <constraint firstItem="bS9-HB-bKu" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" constant="274" id="dyP-o4-82c"/>
+                <constraint firstItem="g9W-sG-Xqk" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="fwA-Gb-8G7"/>
+                <constraint firstItem="IAd-KO-Th5" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="hjd-GT-YHT"/>
+                <constraint firstItem="Llh-o6-5G9" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="kKd-E1-OaQ"/>
+                <constraint firstItem="9WJ-3B-Rdz" firstAttribute="width" secondItem="pi7-OW-aDd" secondAttribute="width" id="mzc-0t-ebW"/>
+                <constraint firstAttribute="bottom" secondItem="zyq-al-XHZ" secondAttribute="bottom" constant="8" id="oeV-QB-tlm"/>
+                <constraint firstItem="Llh-o6-5G9" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" constant="196" id="qw1-03-JY0"/>
+                <constraint firstItem="nch-6t-9H7" firstAttribute="top" secondItem="pi7-OW-aDd" secondAttribute="top" constant="45" id="qzm-Zm-rz0"/>
+                <constraint firstAttribute="bottom" secondItem="PFj-jD-QYu" secondAttribute="bottom" constant="23" id="t5i-ld-AT5"/>
+                <constraint firstItem="bS9-HB-bKu" firstAttribute="centerX" secondItem="pi7-OW-aDd" secondAttribute="centerX" id="vql-uE-5hh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backS2" destination="IAd-KO-Th5" id="561-UP-EHG"/>
+                <outlet property="cardBackView" destination="Llh-o6-5G9" id="5pE-xH-mDW"/>
+                <outlet property="constantBackTop2" destination="RKN-kM-LQX" id="5Bl-zD-ZcF"/>
+                <outlet property="constantBackWidth2" destination="BFx-4d-jCT" id="58P-Az-hkw"/>
+                <outlet property="constantCardTop" destination="qw1-03-JY0" id="Wei-8h-4ha"/>
+                <outlet property="constantCardWidth" destination="WdM-O3-jJu" id="x0U-zm-9hJ"/>
+                <outlet property="constantEnterBottom" destination="t5i-ld-AT5" id="zAU-LC-0fy"/>
+                <outlet property="constantLineWidth" destination="BdL-be-Nhh" id="P7e-ej-yum"/>
+                <outlet property="constantLogoWidth1" destination="iOF-Bb-I9J" id="BQo-Rt-ziT"/>
+                <outlet property="constantLogoWidth2" destination="cg3-j8-JJW" id="pIf-o6-cx7"/>
+                <outlet property="constantPageBottom" destination="oeV-QB-tlm" id="sui-xh-Em8"/>
+                <outlet property="constantPhoneTop" destination="Ti6-Aj-aIE" id="VCP-rX-IEz"/>
+                <outlet property="constantPhoneWidth" destination="xV2-Fa-MOR" id="t5e-lq-ZIL"/>
+                <outlet property="constantTextTop1" destination="qzm-Zm-rz0" id="RaL-qx-ibC"/>
+                <outlet property="constantTextTop2" destination="dyP-o4-82c" id="kLh-Y8-H3O"/>
+                <outlet property="constantTop" destination="RKN-kM-LQX" id="Tvq-5a-bk5"/>
+                <outlet property="constantWidth" destination="BFx-4d-jCT" id="LiP-nh-5Kb"/>
+                <outlet property="enterButton" destination="PFj-jD-QYu" id="0MW-UG-PeG"/>
+                <outlet property="lineView" destination="dky-5E-paG" id="UcV-GY-gM3"/>
+                <outlet property="pageControl" destination="zyq-al-XHZ" id="CSZ-Uc-5KU"/>
+                <outlet property="phone" destination="g9W-sG-Xqk" id="kVt-nf-RW8"/>
+                <outlet property="textView1" destination="nch-6t-9H7" id="Eye-7h-10p"/>
+                <outlet property="textView2" destination="bS9-HB-bKu" id="XzS-J6-Dmj"/>
+            </connections>
+            <point key="canvasLocation" x="355.5" y="244.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="discover_back" width="223" height="276"/>
+        <image name="discover_back2" width="223" height="276"/>
+        <image name="discover_line" width="73" height="7"/>
+        <image name="discover_name" width="90" height="13"/>
+        <image name="discover_name_white" width="190" height="18"/>
+        <image name="discover_phone" width="251" height="447"/>
+        <image name="discover_wonder" width="99" height="13"/>
+        <image name="discover_wonder_white" width="132" height="18"/>
+    </resources>
+</document>
