@@ -120,9 +120,6 @@
                     <state key="normal" title="进入发现">
                         <color key="titleColor" red="0.0" green="0.55294117649999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
-                    <connections>
-                        <action selector="enterDiscover:" destination="pi7-OW-aDd" eventType="touchUpInside" id="670-g9-i8n"/>
-                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discover_line" translatesAutoresizingMaskIntoConstraints="NO" id="dky-5E-paG">
                     <rect key="frame" x="155" y="643" width="73" height="7"/>
