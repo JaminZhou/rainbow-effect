@@ -45,9 +45,9 @@ class DiscoverScrollView: UIScrollView {
             let angle = distanceFromCenterX * angleRatio
             let offset = distanceFromCenterX
             let translateX = frame.size.width * self.translateX * offset / 100
-            let translateY = frame.size.width * self.translateY * fabs(offset) / 100
+            let translateY = frame.size.width * self.translateY * abs(offset) / 100
             let t = CATransform3DMakeTranslation(translateX, translateY, 0)
-            view.layer.transform = CATransform3DRotate(t, (angle / 180.0 * CGFloat(M_PI)), self.rotationX, self.rotationY, self.rotationZ)
+            view.layer.transform = CATransform3DRotate(t, (angle / 180.0 * .pi), self.rotationX, self.rotationY, self.rotationZ)
         }
     }
     

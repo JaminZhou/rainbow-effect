@@ -33,9 +33,10 @@ class DiscoverBirdView: UIView {
     
     func commonInit() {
         //add rainbow
+        let ratio = UIScreen.main.bounds.height / 667.0;
         rainbow = UIImageView(image: #imageLiteral(resourceName: "rainbow.jpg"))
-        rainbow.frame = CGRect(x: 0, y: 0, width: 1264, height: 1264)
-        rainbow.transform = CGAffineTransform(rotationAngle: rainbowAngle/180*CGFloat(M_PI))
+        rainbow.frame = CGRect(x: 0, y: 0, width: 1264 * ratio, height: 1264 * ratio)
+        rainbow.transform = CGAffineTransform(rotationAngle: rainbowAngle / 180 * .pi)
         rainbow.center = CGPoint(x: frame.size.width, y: frame.size.height)
         addSubview(rainbow)
         
@@ -68,17 +69,17 @@ class DiscoverBirdView: UIView {
     func startAnimation() {
         let birdPath = Bundle.main.path(forResource: "discover_bird", ofType: "gif")
         let birdData = NSData(contentsOfFile: birdPath!)
-        birdView.animatedImage = FLAnimatedImage(animatedGIFData: birdData as Data!)
+        birdView.animatedImage = FLAnimatedImage(animatedGIFData: birdData as Data?)
         
         rotationAnimation(rainbow)
     }
     
     func rotationAnimation(_ view: UIView) {
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
-        animation.toValue = (360+rainbowAngle)/180*CGFloat(M_PI)
+        animation.toValue = (360+rainbowAngle) / 180 * .pi
         animation.duration = 10
         animation.repeatCount = Float(CGFloat.greatestFiniteMagnitude)
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: .linear)
         view.layer.add(animation, forKey: "rotationAnimation")
     }
 }

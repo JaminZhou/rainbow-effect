@@ -37,7 +37,7 @@ class DiscoverGuideView: UIView {
     
     //
     var pagingScrollView: UIScrollView!
-    var birdView: DiscoverBirdView!
+    var birdView: DiscoverBirdView?
     var cardView: DiscoverScrollView!
     var backTop: CGFloat!
     var backWidth: CGFloat!
@@ -56,12 +56,14 @@ class DiscoverGuideView: UIView {
                 if index >= 1 {
                     if birdView == nil {
                         birdView = DiscoverBirdView(frame: bounds)
-                        birdView.alpha = 0.0
-                        insertSubview(birdView, belowSubview: pageControl)
+                        birdView!.alpha = 0.0
+                        insertSubview(birdView!, belowSubview: pageControl)
                         UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseInOut, animations: {
-                            self.birdView.alpha = 1.0
-                        }, completion: { (value) in
-                            self.birdView.startAnimation()
+                            self.birdView?.alpha = 1.0
+                        }, completion: { (finished) in
+                            if finished {
+                                self.birdView?.startAnimation()
+                            }
                         })
                         
                         textView2.alpha = 0.0
@@ -80,9 +82,9 @@ class DiscoverGuideView: UIView {
                     }
                 }
             } else {
-                if birdView != nil {
+                if let birdView = birdView {
                     birdView.removeFromSuperview()
-                    birdView = nil
+                    self.birdView = nil
                 }
             }
             if index < 1 && textView2.isHidden == false {
@@ -97,17 +99,10 @@ class DiscoverGuideView: UIView {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    func commonInit() {
         configConstant()
         addPagingScrollView()
         addCardView()
-    }
-    
-    override var frame: CGRect {
-        didSet {
-            if pagingScrollView != nil {pagingScrollView.frame = bounds}
-        }
     }
     
     func configConstant() {
@@ -143,6 +138,7 @@ class DiscoverGuideView: UIView {
     
     func addCardView() {
         cardBackView.clipsToBounds = true
+        self.layoutIfNeeded()
         cardView = DiscoverScrollView(frame: CGRect(x: 16, y: 95, width: cardBackView.frame.size.width-32, height: cardBackView.frame.size.height-95))
         cardBackView.addSubview(cardView)
         
@@ -153,7 +149,7 @@ class DiscoverGuideView: UIView {
         let label = UILabel()
         label.text = text
         label.textColor = UIColor(red: 61/255, green: 64/255, blue: 72/255, alpha: 1.0)
-        label.font = UIFont.systemFont(ofSize: 14*KRatio, weight: UIFontWeightLight)
+        label.font = UIFont.systemFont(ofSize: 14*KRatio, weight: UIFont.Weight.light)
         label.sizeToFit()
         label.center = CGPoint(x: (0.5+CGFloat(index))*bounds.size.width, y: 102*KRatio)
         pagingScrollView.addSubview(label)

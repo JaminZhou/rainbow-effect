@@ -18,8 +18,9 @@ class ViewController: UIViewController {
     }
     
     func showGuide() {
-        guideView = Bundle.main.loadNibNamed("DiscoverGuideView", owner: self, options: nil)![0] as! DiscoverGuideView
+        guideView = Bundle.main.loadNibNamed("DiscoverGuideView", owner: self, options: nil)![0] as? DiscoverGuideView
         guideView.frame = view.bounds
+        guideView.commonInit()
         view.addSubview(guideView)
     }
 

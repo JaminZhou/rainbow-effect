@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532A6EDA346D6864CF4547DF /* libPods-rainbow-effect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 482D28EA5BF81BBF4A69F0D4 /* libPods-rainbow-effect.a */; };
 		7A7784EC1E6C05E000592B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7784EB1E6C05E000592B02 /* AppDelegate.swift */; };
 		7A7784EE1E6C05E000592B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7784ED1E6C05E000592B02 /* ViewController.swift */; };
 		7A7784F11E6C05E000592B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7784EF1E6C05E000592B02 /* Main.storyboard */; };
 		7A7784F31E6C05E000592B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7784F21E6C05E000592B02 /* Assets.xcassets */; };
 		7A7784F61E6C05E000592B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7784F41E6C05E000592B02 /* LaunchScreen.storyboard */; };
-		7A7785061E6C0ACE00592B02 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7785011E6C0ACE00592B02 /* FLAnimatedImage.m */; };
-		7A7785071E6C0ACE00592B02 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7785031E6C0ACE00592B02 /* FLAnimatedImageView.m */; };
 		7A77850A1E6C0D0700592B02 /* DiscoverScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7785091E6C0D0700592B02 /* DiscoverScrollView.swift */; };
 		7AA2E25D1E6C14BD00411AA6 /* DiscoverBirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2E25C1E6C14BC00411AA6 /* DiscoverBirdView.swift */; };
 		7AA2E25F1E6C174300411AA6 /* discover_bird.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2E25E1E6C174300411AA6 /* discover_bird.gif */; };
@@ -23,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482D28EA5BF81BBF4A69F0D4 /* libPods-rainbow-effect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rainbow-effect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E9F22D258671D6E6820194 /* Pods-rainbow-effect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainbow-effect.debug.xcconfig"; path = "Target Support Files/Pods-rainbow-effect/Pods-rainbow-effect.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7784E81E6C05E000592B02 /* rainbow-effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rainbow-effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7784EB1E6C05E000592B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7784ED1E6C05E000592B02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,16 +32,13 @@
 		7A7784F51E6C05E000592B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A7784F71E6C05E000592B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A7784FF1E6C0ACE00592B02 /* rainbow-effect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rainbow-effect-Bridging-Header.h"; sourceTree = "<group>"; };
-		7A7785001E6C0ACE00592B02 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
-		7A7785011E6C0ACE00592B02 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
-		7A7785021E6C0ACE00592B02 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
-		7A7785031E6C0ACE00592B02 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
 		7A7785091E6C0D0700592B02 /* DiscoverScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverScrollView.swift; sourceTree = "<group>"; };
 		7AA2E25C1E6C14BC00411AA6 /* DiscoverBirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverBirdView.swift; sourceTree = "<group>"; };
 		7AA2E25E1E6C174300411AA6 /* discover_bird.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = discover_bird.gif; sourceTree = "<group>"; };
 		7AA2E2601E6C174C00411AA6 /* rainbow@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rainbow@2x.jpg"; sourceTree = "<group>"; };
 		7AA2E2631E6C2C7C00411AA6 /* DiscoverGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverGuideView.swift; sourceTree = "<group>"; };
 		7AA2E2651E6C2C8600411AA6 /* DiscoverGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverGuideView.xib; sourceTree = "<group>"; };
+		A5BDD348BACF6EB5398DB1DB /* Pods-rainbow-effect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainbow-effect.release.xcconfig"; path = "Target Support Files/Pods-rainbow-effect/Pods-rainbow-effect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532A6EDA346D6864CF4547DF /* libPods-rainbow-effect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		599529FA405293026E0BDB3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482D28EA5BF81BBF4A69F0D4 /* libPods-rainbow-effect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A7784DF1E6C05E000592B02 = {
 			isa = PBXGroup;
 			children = (
 				7A7784EA1E6C05E000592B02 /* rainbow-effect */,
 				7A7784E91E6C05E000592B02 /* Products */,
+				B0F9FE33236EEA7D5ABF7784 /* Pods */,
+				599529FA405293026E0BDB3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,22 +92,10 @@
 				7A7784F21E6C05E000592B02 /* Assets.xcassets */,
 				7A7784F41E6C05E000592B02 /* LaunchScreen.storyboard */,
 				7A7784F71E6C05E000592B02 /* Info.plist */,
+				7A7784FF1E6C0ACE00592B02 /* rainbow-effect-Bridging-Header.h */,
 				7AA2E2621E6C175500411AA6 /* resources */,
-				7A7784FE1E6C0A9300592B02 /* FLAnimatedImage */,
 			);
 			path = "rainbow-effect";
-			sourceTree = "<group>";
-		};
-		7A7784FE1E6C0A9300592B02 /* FLAnimatedImage */ = {
-			isa = PBXGroup;
-			children = (
-				7A7785001E6C0ACE00592B02 /* FLAnimatedImage.h */,
-				7A7785011E6C0ACE00592B02 /* FLAnimatedImage.m */,
-				7A7785021E6C0ACE00592B02 /* FLAnimatedImageView.h */,
-				7A7785031E6C0ACE00592B02 /* FLAnimatedImageView.m */,
-				7A7784FF1E6C0ACE00592B02 /* rainbow-effect-Bridging-Header.h */,
-			);
-			name = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
 		7AA2E2621E6C175500411AA6 /* resources */ = {
@@ -110,6 +107,15 @@
 			name = resources;
 			sourceTree = "<group>";
 		};
+		B0F9FE33236EEA7D5ABF7784 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53E9F22D258671D6E6820194 /* Pods-rainbow-effect.debug.xcconfig */,
+				A5BDD348BACF6EB5398DB1DB /* Pods-rainbow-effect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A7784FA1E6C05E000592B02 /* Build configuration list for PBXNativeTarget "rainbow-effect" */;
 			buildPhases = (
+				72A3A38AFCC82E710AFA2F8A /* [CP] Check Pods Manifest.lock */,
 				7A7784E41E6C05E000592B02 /* Sources */,
 				7A7784E51E6C05E000592B02 /* Frameworks */,
 				7A7784E61E6C05E000592B02 /* Resources */,
@@ -137,12 +144,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Hangzhou Tomorning Technology Co., Ltd.";
 				TargetAttributes = {
 					7A7784E71E6C05E000592B02 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RVRG597GCP;
+						DevelopmentTeam = NA4X3TYR2P;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -150,7 +157,7 @@
 			};
 			buildConfigurationList = 7A7784E31E6C05E000592B02 /* Build configuration list for PBXProject "rainbow-effect" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -182,6 +189,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72A3A38AFCC82E710AFA2F8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rainbow-effect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A7784E41E6C05E000592B02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -192,8 +224,6 @@
 				7AA2E25D1E6C14BD00411AA6 /* DiscoverBirdView.swift in Sources */,
 				7A77850A1E6C0D0700592B02 /* DiscoverScrollView.swift in Sources */,
 				7A7784EC1E6C05E000592B02 /* AppDelegate.swift in Sources */,
-				7A7785061E6C0ACE00592B02 /* FLAnimatedImage.m in Sources */,
-				7A7785071E6C0ACE00592B02 /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +253,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -273,20 +312,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -314,32 +362,36 @@
 		};
 		7A7784FB1E6C05E000592B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E9F22D258671D6E6820194 /* Pods-rainbow-effect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RVRG597GCP;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				DEVELOPMENT_TEAM = NA4X3TYR2P;
 				INFOPLIST_FILE = "rainbow-effect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.tomorning.rainbow-effect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rainbow-effect/rainbow-effect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		7A7784FC1E6C05E000592B02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BDD348BACF6EB5398DB1DB /* Pods-rainbow-effect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RVRG597GCP;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				DEVELOPMENT_TEAM = NA4X3TYR2P;
 				INFOPLIST_FILE = "rainbow-effect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.tomorning.rainbow-effect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rainbow-effect/rainbow-effect-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
